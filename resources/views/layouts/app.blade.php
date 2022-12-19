@@ -18,6 +18,11 @@
 <body>
 
     <main>
+        @if(Route::currentRouteName() == 'home')
+            <a href="{{route('filtered')}}">Visualizza treni in partenza oggi</a>
+        @else
+            <a href="/">Mostra tutti i treni</a>
+        @endif
             <table class="table">
                 <thead class="bg-black text-white">
                 <tr>
