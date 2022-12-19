@@ -18,8 +18,10 @@
 <body>
 
     <main>
-            <table>
+            <table class="table">
+                <thead class="bg-black text-white">
                 <tr>
+                    <th>#</th>
                     <th>Azienda</th>
                     <th>Stazione di partenza</th>
                     <th>Stazione di arrivo</th>
@@ -31,9 +33,10 @@
                     <th>Cancellato</th>
                     <th>Data di partenza</th>
                 </tr>
-        
+            </thead>
         @foreach ($trains as $train)
             <tr>
+                    <th>{{$train->id}}</th>
                     <td>{{$train->azienda}}</td>
                     <td>{{$train->stazione_partenza}}</td>
                     <td>{{$train->stazione_arrivo}}</td>
