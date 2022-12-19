@@ -26,6 +26,7 @@ class TravelTrainSeeder extends Seeder
         $newtrain -> numero_carrozze = $faker->randomDigit(); 
         $newtrain -> in_orario = $faker->boolean(); 
         $newtrain -> cancellato = $faker->boolean();
+        $newtrain->data_partenza = $faker->date();
             $newtrain->save();
        }
     }

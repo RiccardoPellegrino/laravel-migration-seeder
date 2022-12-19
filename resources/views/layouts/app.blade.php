@@ -29,6 +29,7 @@
                     <th>Numero di carrozza</th>
                     <th>in Orario</th>
                     <th>Cancellato</th>
+                    <th>Data di partenza</th>
                 </tr>
         
         @foreach ($trains as $train)
@@ -42,6 +43,7 @@
                     <td>{{$train->numero_carrozza}}</td>
                     <td>{{$train->in_orario}}</td>
                     <td>{{$train->cancellato}}</td>
+                    <td>{{$train->data_partenza}}</td>
             </tr>
             @endforeach
         </table>
