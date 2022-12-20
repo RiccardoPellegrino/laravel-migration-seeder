@@ -17,7 +17,7 @@ class TravelTrainSeeder extends Seeder
     {
         for ($i = 0; $i < 10; $i++){
         $newtrain = new Train();
-        $newtrain -> azienda = $faker->company(); 
+        $newtrain -> azienda = $faker->name(); 
         $newtrain -> stazione_partenza = $faker->city(); 
         $newtrain -> stazione_arrivo = $faker->city(); 
         $newtrain -> orario_partenza = $faker->time(); 
